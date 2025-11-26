@@ -11,8 +11,9 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    // アクセントカラーを明るいターコイズ系（#00a0a0）に設定
                     colors: {
-                        'theme-color': '#00a0a0',
+                        'theme-color': '#00a0a0', 
                     },
                     fontFamily: {
                         sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
@@ -29,7 +30,7 @@
             margin: 0 auto;
             line-height: 1.6;
         }
-        /* リストのカスタムマーカー */
+        /* リストのカスタムマーカー (ご要望のデザインを維持) */
         .custom-ul li {
             list-style: none;
             padding-left: 1.5rem;
@@ -48,7 +49,7 @@
 <body class="p-6 bg-gray-50 font-sans text-gray-800">
 
     <!-- メインコンテナ -->
-    <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
+    <div class="bg-white p-6 md:p-10 rounded-xl shadow-xl">
 
         <!-- ページタイトルと名前 -->
         <h1 class="text-center text-4xl font-extrabold text-theme-color mb-8 border-b-2 border-theme-color/50 pb-2">しょう</h1>
@@ -59,19 +60,17 @@
         <section class="mb-10">
             <h2 class="text-2xl font-bold text-theme-color border-b-2 border-dashed border-theme-color/50 pb-1 mb-4">About</h2>
             <p class="mb-4">
-                私は新しい技術とクリエイティブな表現に興味を持つ学習者です。<br>
-                Web開発、特にJavaScriptとフロントエンドの技術習得に力を入れています。<br>
-                将来は、ユーザー体験を第一に考えた、便利で楽しいWebサービスを開発したいと考えています。
+                今年度から**ZEN大学に入学**し、新しい技術を学ぶ学生です。<br>
+                これまでの公務員としての勤務経験から培った、計画性や責任感を活かし、Web技術を中心に幅広い知識の習得を目指しています。
             </p>
 
             <h3 class="text-xl font-semibold text-theme-color mt-6 mb-3">Profile</h3>
             <ul class="custom-ul">
                 <li>名前（ハンドルネーム）：しょう</li>
-                <li>所在地：東京（都や県までで OK）</li>
-                <li>得意領域：HTML, CSS（これからWeb開発、クリエイティブコーディングを学習）</li>
+                <li>所在地：東京</li>
             </ul>
 
-            <h3 class="text-xl font-semibold text-theme-color mt-6 mb-3">Skills</h3>
+            <h3 class="text-xl font-semibold text-theme-color mt-6 mb-3">Skills (資格・免許)</h3>
             <div class="overflow-x-auto">
                 <table class="w-full text-left rounded-lg overflow-hidden border border-gray-200">
                     <thead class="bg-theme-color text-white">
@@ -82,20 +81,12 @@
                     </thead>
                     <tbody>
                         <tr class="bg-gray-50 hover:bg-gray-100">
-                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">OS</th>
-                            <td class="p-3 border-l border-gray-200">Windows, macOS, Linux (Ubuntu) など</td>
+                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">資格</th>
+                            <td class="p-3 border-l border-gray-200">1級土木施工管理技術者</td>
                         </tr>
                         <tr class="bg-white hover:bg-gray-100">
-                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">Engine, Frameworks</th>
-                            <td class="p-3 border-l border-gray-200">（学習予定：Node.js, React, p5.js など）</td>
-                        </tr>
-                        <tr class="bg-gray-50 hover:bg-gray-100">
-                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">Tool, MiddleWare</th>
-                            <td class="p-3 border-l border-gray-200">Git, VS Code, PostgreSQL など</td>
-                        </tr>
-                        <tr class="bg-white hover:bg-gray-100">
-                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">資格・免許</th>
-                            <td class="p-3 border-l border-gray-200">（取得した資格があれば記入）</td>
+                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">免許</th>
+                            <td class="p-3 border-l border-gray-200">普通運転免許</td>
                         </tr>
                     </tbody>
                 </table>
@@ -106,25 +97,15 @@
         <!-- Works セクション -->
         <!-- ==================== -->
         <section class="mb-10">
-            <h2 class="text-2xl font-bold text-theme-color border-b-2 border-dashed border-theme-color/50 pb-1 mb-4">Works</h2>
-            <p class="mb-4">プログラミング学習やクリエイティブな活動で制作した作品やアウトプットを公開します。</p>
-            <ul class="custom-ul">
-                <li><a href="https://github.com/あなたのユーザ名" class="hover:underline">GitHub（コードを公開）</a></li>
-                <li><a href="https://qiita.com/" class="hover:underline">Qiita（技術記事のアウトプット）</a></li>
-                <li>
-                    作った作品
-                    <ul class="custom-ul ml-4 mt-2">
-                        <li><a href="https://example.com/作品1へのリンク" class="hover:underline">作品 1（GitHub Pagesで公開した最初のサイト）</a></li>
-                        <li><a href="https://openprocessing.org/sketch/あなたのSketchID/embed/" class="hover:underline">作品 2（Open Processingで作成したアニメーション）</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <!-- Open Processingの作品埋め込み例 -->
-            <h3 class="text-xl font-semibold text-theme-color mt-6 mb-3">Open Processing 作品</h3>
-            <!-- 実際の Sketch ID に置き換えてください -->
-            <div class="flex justify-center">
-                <iframe src="https://openprocessing.org/sketch/822736/embed/" width="400" height="250" frameborder="0" class="rounded-lg shadow-md max-w-full"></iframe>
+            <h2 class="text-2xl font-bold text-theme-color border-b-2 border-dashed border-theme-color/50 pb-1 mb-4">Works (職務経験)</h2>
+            <p class="mb-4">
+                大学入学前は公務員として勤務しておりました。
+            </p>
+            <div class="p-4 bg-gray-100 rounded-lg border border-gray-200 shadow-sm">
+                <h3 class="text-xl font-semibold text-theme-color mb-2">公務員としての勤務</h3>
+                <p class="text-gray-700">
+                    約X年間、主に（具体的な業務内容を記入 - 例：土木管理、市民サービス、計画策定など）に関する業務に従事し、社会基盤の維持・運営に貢献してまいりました。
+                </p>
             </div>
         </section>
 
@@ -136,16 +117,9 @@
             <h2 class="text-2xl font-bold text-theme-color border-b-2 border-dashed border-theme-color/50 pb-1 mb-4">Contact</h2>
             <p class="mb-4">ご連絡はこちらからお願いします。</p>
             <ul class="custom-ul">
-                <li><a href="mailto:name@example.com" class="hover:underline">Mail</a></li>
-                <li><a href="https://twitter.com/n_yobikou" class="hover:underline">X(旧 Twitter)</a></li>
+                <li><a href="mailto:name@example.com" class="hover:underline text-theme-color">Mail</a></li>
+                <li><a href="https://twitter.com/n_yobikou" class="hover:underline text-theme-color">X(旧 Twitter)</a></li>
             </ul>
-
-            <!-- X(旧 Twitter) のタイムライン埋め込み例 -->
-            <h3 class="text-xl font-semibold text-theme-color mt-6 mb-3">X(旧 Twitter) フィード</h3>
-            <div class="flex justify-center">
-                <a class="twitter-timeline max-w-full" data-width="400" data-height="400" href="https://twitter.com/n_yobikou?ref_src=twsrc%5Etfw">Tweets by n_yobikou</a>
-            </div>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
 
         <!-- ==================== -->
@@ -153,7 +127,7 @@
         <!-- ==================== -->
         <section class="mb-10">
             <h2 class="text-2xl font-bold text-theme-color border-b-2 border-dashed border-theme-color/50 pb-1 mb-4">History</h2>
-            <p class="mb-4">学歴、職歴、アルバイト、インターン経験など。</p>
+            <p class="mb-4">主な経歴です。</p>
             <div class="overflow-x-auto">
                 <table class="w-full text-left rounded-lg overflow-hidden border border-gray-200">
                     <thead class="bg-theme-color text-white">
@@ -165,120 +139,18 @@
                     <tbody>
                         <tr class="bg-gray-50 hover:bg-gray-100">
                             <th class="p-3 font-medium text-gray-700 border-r border-gray-200">20XX 年</th>
-                            <td class="p-3 border-l border-gray-200">プログラミング学習を開始</td>
+                            <td class="p-3 border-l border-gray-200">公務員として勤務開始</td>
                         </tr>
                         <tr class="bg-white hover:bg-gray-100">
-                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">20XX 年</th>
-                            <td class="p-3 border-l border-gray-200">学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/" class="hover:underline">N高等学校</a> 卒業</td>
-                        </tr>
-                        <tr class="bg-gray-50 hover:bg-gray-100">
-                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">20XX 年</th>
-                            <td class="p-3 border-l border-gray-200">表彰、受賞歴、メディア掲載記事などあれば</td>
+                            <th class="p-3 font-medium text-gray-700 border-r border-gray-200">2025 年</th>
+                            <td class="p-3 border-l border-gray-200">ZEN大学に入学</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- ==================== -->
-        <!-- コピー機能のテスト用コードブロック -->
-        <!-- ==================== -->
-        <section class="mt-12">
-            <h2 class="text-2xl font-bold text-theme-color border-b-2 border-dashed border-theme-color/50 pb-1 mb-4">テスト用コードブロック</h2>
-            <p class="mb-4 text-sm text-gray-500">以下のコードは、コピー機能のデモです。ボタンを押すとコードがクリップボードにコピーされます。</p>
-
-            <div id="codeBlock" class="relative bg-gray-900 text-white rounded-lg p-4 font-mono text-sm overflow-x-auto shadow-xl">
-                <pre class="whitespace-pre-wrap"><code>
-function greet(name) {
-  // これはテスト用のJavaScriptコードです。
-  console.log(`Hello, ${name}!`);
-}
-greet("World");
-
-// 複数行にわたるコードの例
-const data = [
-  { id: 1, value: 'A' },
-  { id: 2, value: 'B' }
-];
-
-data.forEach(item => {
-    console.log(`ID: ${item.id}, Value: ${item.value}`);
-});
-                </code></pre>
-                <button onclick="copyCode()" class="absolute top-2 right-2 bg-theme-color hover:bg-theme-color/80 text-white text-xs font-bold py-1 px-2 rounded transition duration-200">
-                    コピー
-                </button>
-                <div id="copyMessage" class="hidden absolute top-2 right-16 bg-green-500 text-white text-xs py-1 px-2 rounded transition duration-500 opacity-0">
-                    コピーしました！
-                </div>
-            </div>
-        </section>
-
     </div>
 
-    <!-- JavaScript for Copy Function -->
-    <script>
-        /**
-         * 'codeBlock'内のテキストをクリップボードにコピーし、メッセージを表示する関数
-         */
-        function copyCode() {
-            const codeBlock = document.getElementById('codeBlock');
-            const codeElement = codeBlock.querySelector('code');
-            const textToCopy = codeElement.textContent || codeElement.innerText;
-            const messageElement = document.getElementById('copyMessage');
-
-            // 1. テキストエリアを作成し、そこにテキストを流し込む
-            const textarea = document.createElement('textarea');
-            textarea.value = textToCopy.trim();
-            document.body.appendChild(textarea);
-
-            // 2. テキストエリアを選択し、コピーコマンドを実行
-            textarea.select();
-            
-            // execCommand('copy')は古いですが、iframe環境での動作が安定しています
-            let success = false;
-            try {
-                success = document.execCommand('copy');
-            } catch (err) {
-                console.error('コピーに失敗しました:', err);
-            }
-
-            // 3. テキストエリアを削除
-            document.body.removeChild(textarea);
-
-            if (success) {
-                // 4. コピー成功メッセージを表示
-                messageElement.textContent = 'コピーしました！';
-                messageElement.classList.remove('hidden', 'opacity-0');
-                messageElement.classList.add('opacity-100');
-
-                // 5. 1.5秒後にメッセージを非表示にする
-                setTimeout(() => {
-                    messageElement.classList.remove('opacity-100');
-                    messageElement.classList.add('opacity-0');
-                    setTimeout(() => {
-                        messageElement.classList.add('hidden');
-                    }, 500); // 遷移時間と合わせる
-                }, 1500);
-            } else {
-                messageElement.textContent = 'コピー失敗';
-                messageElement.classList.remove('hidden', 'opacity-0');
-                messageElement.classList.add('opacity-100', 'bg-red-500'); // 失敗時は赤色にする
-
-                setTimeout(() => {
-                    messageElement.classList.remove('opacity-100');
-                    messageElement.classList.add('opacity-0');
-                    setTimeout(() => {
-                        messageElement.classList.add('hidden');
-                        messageElement.classList.remove('bg-red-500'); // 色を元に戻す
-                    }, 500);
-                }, 1500);
-            }
-        }
-    </script>
-</body>
-</html>
-        }
-    </script>
 </body>
 </html>
